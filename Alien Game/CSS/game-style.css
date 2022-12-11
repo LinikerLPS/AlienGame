@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+.game-board {
+    width: 90%;
+    height: 500px;
+    border-bottom: 15px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    Background-image: linear-gradient(rgb(13, 36, 99), rgb(89, 132, 189));
+}
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0 2rem;
+    width: 100%;
+    top: 0;
+}
+
+span{ 
+    font-size: 20px;
+    color: rgb(160, 240, 39);
+}
+
+
+
+.alien {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: alien-animation 2s infinite linear;
+}
+
+.astro {
+    width: 80px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.space {
+    width: 100%;
+    height: 500px; 
+}
+
+
+.button-menu:hover,
+.button-menu:active {
+    background-color: #0adde8;
+}
+
+
+
+.jump {
+    animation: jump 1.1s linear;
+  }
+
+@keyframes alien-animation {
+  from{
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+} 
+    
+   
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+      }
+    
+      30% {
+        bottom: 80px;
+      }
+    
+      50% {
+        bottom: 100px;
+      }
+    
+      80% {
+        bottom: 80px;
+      }
+    
+      100% {
+        bottom: 0;
+      }
+   
+}
